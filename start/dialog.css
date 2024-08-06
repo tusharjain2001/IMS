@@ -1,0 +1,25 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#newform {
+  text-align: center;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  display: none;
+}
+input {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px;
+}
+button {
+  padding: 8px;
+  background-color: #4caf50;
+  color: #0c6615;
+  border: 2px solid green;
+  border-radius: 4px;
+}
+button:hover {
+    background-color: #b9e8ba;
+}

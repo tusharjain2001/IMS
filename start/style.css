@@ -29,10 +29,14 @@ td {
 
 .button {
   float: right;
-  background-color: rgba(222, 128, 82, 0.838);
+  background-color: grey;
   font-size: 18px;
+  color: white;
   border-radius: 12px;
+  
+  padding: 8px;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 .button:hover {
-  background-color: rgb(199, 144, 144);
+  background-color: black;
 }
