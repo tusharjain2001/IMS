@@ -21,14 +21,16 @@
     <form id="newform" onsubmit="addData(event)">
       <label for="itemname" > ItemName : </label>
       <input type="text" placeholder="Item Name" id="name1" /><br /><br />
-      <label for="itemname" > Quantity : </label>
-      <input type="number" placeholder="Quantity" id="qty" /><br /><br />
+      
       <label for="itemname" > Buy : </label>
       <input type="number" placeholder="Buy" id="buy" /><br /><br />
       <label for="itemname" > Sell : </label>
       <input type="number" placeholder="Sell" id="sell" />
       <br><br>
       <button onclick="addData()">AddData</button>
+
+      
+    
     </form>
     <br><br>
 
@@ -36,9 +38,9 @@
       <thead>
         <tr>
           <th >Item Name</th>
-          <th>Quantity</th>
+          <th>Buy</th>
           <th>sell</th>
-          <th>buy</th>
+          <th>Quantity</th>
         </tr>
       </thead>
       <tbody ></tbody>
