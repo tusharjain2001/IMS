@@ -1,10 +1,10 @@
 function openform() {
   let a = document.getElementById("newform");
   // a.style.display = "block";
-  if (a.style.display === "block") {
+  if (a.style.display === "flex") {
     a.style.display = "none";
   } else {
-    a.style.display = "block";
+    a.style.display = "flex";
   }
 }
 
@@ -63,9 +63,12 @@ function updateTable() {
   // Traverse the map and add rows to the table
   for (let [name, arr] of map1) {
     let row = table.insertRow();
-    row.insertCell(0).innerHTML = name;
+    row.classList.add("newrow");
+
+    row.insertCell(0).innerHTML = name.toUpperCase();
     row.insertCell(1).innerHTML = arr[0];
     row.insertCell(2).innerHTML = arr[1];
     row.insertCell(3).innerHTML = arr[0] - arr[1];
   }
+
 }

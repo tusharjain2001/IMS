@@ -1,17 +1,14 @@
 label {
-  display: block;
+  display: flex;
   margin-bottom: 10px;
 }
 
-#newform {
-  text-align: center;
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-  display: none;
-}
+
 input {
   border: 2px solid;
   border-radius: 8px;
   padding: 8px;
+  font-weight: bold;
 }
 button {
   padding: 8px;
@@ -22,4 +19,14 @@ button {
 }
 button:hover {
     background-color: #b9e8ba;
+}
+
+.newrow {
+    background-color: white ;
+    color: blue;
+    font-weight: bolder;
+}
+
+.firstcolumn {
+  background-color: black;
 }

@@ -15,23 +15,23 @@
     <h1>Inventory Management System</h1>
     <hr/>
 
-    <button class="button" type="button" onclick = "openform()"> Add </button>
+    <button class="button" type="button" onclick = "openform()" > Add Items </button>
     <br /><br />
-
-    <form id="newform" onsubmit="addData(event)">
+    <div class="formcontainer">
+    <form id="newform" onsubmit="addData(event)" style="display: none;">
       <label for="itemname" > ItemName : </label>
-      <input type="text" placeholder="Item Name" id="name1" /><br /><br />
+      <input type="text" placeholder="Item Name" id="name1" required/><br /><br />
       
       <label for="itemname" > Buy : </label>
-      <input type="number" placeholder="Buy" id="buy" /><br /><br />
+      <input type="number" placeholder="Buy" id="buy" required/><br /><br />
       <label for="itemname" > Sell : </label>
-      <input type="number" placeholder="Sell" id="sell" />
+      <input type="number" placeholder="Sell" id="sell" required />
       <br><br>
       <button onclick="addData()">AddData</button>
 
       
     
-    </form>
+    </form></div>
     <br><br>
 
     <table  id="table1">

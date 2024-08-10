@@ -1,10 +1,10 @@
 body {
-  background-color: #fdffcd;
+  background-color: #f8e9a1;
 }
 
 h1 {
   text-align: center;
-  color: #155263;
+  color: #f4976c;
 }
 
 table {
@@ -14,13 +14,13 @@ table {
 
 th,
 td {
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 8px;
 }
 
 thead {
-  background-color: beige;
-  color: rgba(0, 0, 0, 0.505);
+  background-color: black;
+  color: white;
   font-size: large;
 }
 td {
@@ -33,22 +33,48 @@ td {
   font-size: 18px;
   color: white;
   border-radius: 12px;
-  
+
   padding: 8px;
   font-family: "Edu AU VIC WA NT Hand", cursive;
   font-weight: bold;
   outline: none;
   border: none;
   cursor: pointer;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.342);
+  
 }
 .button:hover {
-  background-color: rgba(0, 0, 0,1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 hr {
   border: none;
   height: 5px;
-  background-color: #082a02; /* Neon green color */
+  background-color: #8697c4; /* Neon green color */
   margin-bottom: 20px;
   border-radius: 8px;
 }
+
+#newform {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  
+  background-color: #f4e4c1;
+  padding: 16px;
+  border: 2px solid black;
+  border-radius: 15px;
+  
+}
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+tr>td:first-child {
+  background-color: rgba(0, 0, 0, 0.255);
+} 
