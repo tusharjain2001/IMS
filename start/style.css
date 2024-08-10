@@ -19,8 +19,8 @@ td {
 }
 
 thead {
-  background-color: #393e46;
-  color: white;
+  background-color: beige;
+  color: rgba(0, 0, 0, 0.505);
   font-size: large;
 }
 td {
@@ -36,7 +36,19 @@ td {
   
   padding: 8px;
   font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 .button:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0,1);
+}
+
+hr {
+  border: none;
+  height: 5px;
+  background-color: #082a02; /* Neon green color */
+  margin-bottom: 20px;
+  border-radius: 8px;
 }

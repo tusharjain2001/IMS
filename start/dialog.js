@@ -1,6 +1,11 @@
 function openform() {
   let a = document.getElementById("newform");
-  a.style.display = "block";
+  // a.style.display = "block";
+  if (a.style.display === "block") {
+    a.style.display = "none";
+  } else {
+    a.style.display = "block";
+  }
 }
 
 const map1 = new Map();
@@ -48,7 +53,7 @@ function updateTable() {
         <tr>
           <th >Item Name</th>
           <th>Buy</th>
-          <th>sell</th>
+          <th>Sell</th>
           <th>Quantity</th>
         </tr>
       </thead>
