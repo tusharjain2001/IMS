@@ -76,8 +76,7 @@ const searchfun = () => {
 
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
-      }
-      else{
+      } else {
         tr[i].style.display = "none";
       }
     }

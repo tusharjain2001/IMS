@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("./img10.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
 
   /* margin: 0; */
 }
@@ -16,7 +19,6 @@ h1 {
   font-size: 60px;
   color: #ffffff;
   font-family: Copperplate Gothic;
-  
 }
 
 h2 {
@@ -32,7 +34,6 @@ h3 {
 }
 div.login2 {
   text-align: center;
-  
 }
 span {
   display: flex;
@@ -44,10 +45,10 @@ span {
   margin: auto;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
-
+  padding: 24px 0px;
 }
 .button1 {
-  background-color: rgb(255, 255, 255,0.1);
+  background-color: rgb(255, 255, 255, 0.1);
   box-shadow: 5px 5px 2px 2px #00000066;
 
   padding: 8px 0px;
@@ -61,29 +62,18 @@ span {
   border: none;
 }
 .button1:hover {
-  background-color: rgba(0, 0, 0, 0.5);;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#text1 {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50px;
-  padding: 5px;
-  color: white;
-  font-family: sans-serif;
-  font-weight: bold;
-  box-shadow: 5px 5px 2px 2px #00000066;
-  outline:none;
-}
+#text1,
 #text2 {
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50px;
-  padding: 5px;
+  border-radius: 30px;
+  padding: 8px 12px;
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  box-shadow: 5px 5px 2px 2px #00000066;
-  outline:none;
-  
-
+  box-shadow: 2px 2px 2px 5px #00000000;
+  outline: none;
+  border: none;
 }
-
