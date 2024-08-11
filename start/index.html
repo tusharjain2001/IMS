@@ -7,45 +7,48 @@
     <link rel="stylesheet" href="style.css" />
 
     <link rel="stylesheet" href="dialog.css" />
-
-    <script src="dialog.js"></script>
-    
   </head>
   <body>
     <h1>Inventory Management System</h1>
-    <hr/>
+    <hr />
 
-    <button class="button" type="button" onclick = "openform()" > Add Items </button>
+    <button class="button" type="button" onclick="toggleForm()">
+      Add Items
+    </button>
+    <input type="text" id="myinput" placeholder="Search For Item..." onkeyup="searchfun()" />
+
     <br /><br />
     <div class="formcontainer">
-    <form id="newform" onsubmit="addData(event)" style="display: none;">
-      <label for="itemname" > ItemName : </label>
-      <input type="text" placeholder="Item Name" id="name1" required/><br /><br />
-      
-      <label for="itemname" > Buy : </label>
-      <input type="number" placeholder="Buy" id="buy" required/><br /><br />
-      <label for="itemname" > Sell : </label>
-      <input type="number" placeholder="Sell" id="sell" required />
-      <br><br>
-      <button onclick="addData()">AddData</button>
+      <form id="newform" onsubmit="addData(event)" style="display: none">
+        <label for="itemname"> ItemName : </label>
+        <input
+          type="text"
+          placeholder="Item Name"
+          id="name1"
+          required
+        /><br /><br />
 
-      
-    
-    </form></div>
-    <br><br>
+        <label for="itemname"> Buy : </label>
+        <input type="number" placeholder="Buy" id="buy" required /><br /><br />
+        <label for="itemname"> Sell : </label>
+        <input type="number" placeholder="Sell" id="sell" required />
+        <br /><br />
+        <button onclick="addData()">AddData</button>
+      </form>
+    </div>
+    <br /><br />
 
-    <table  id="table1">
+    <table id="table1">
       <thead>
         <tr>
-          <th >Item Name</th>
+          <th>Item Name</th>
           <th>Buy</th>
           <th>Sell</th>
           <th>Quantity</th>
         </tr>
       </thead>
-      <tbody ></tbody>
+      <tbody id="table-body"></tbody>
     </table>
-
-    
   </body>
+  <script src="dialog.js"></script>
 </html>

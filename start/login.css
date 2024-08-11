@@ -1,6 +1,7 @@
 body {
-  background: url('./img5.jpg');
+  background-image: url("./img10.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   
 
   /* margin: 0; */
